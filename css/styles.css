@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1400px;
+  min-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/contact.jpg);
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  max-width: 1000px;
+  width: 75%;
+  color: white;
+}
+.main-container h1 {
+  text-align: center;
+}
+.main-container .fm-msg {
+  margin: 10px 0px;
+  color: brown;
+}
+.main-container .form-container {
+  max-width: 500px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-container .form-container form {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-container .form-container form,
+.main-container .form-container form * {
+  box-sizing: border-box;
+}
+.main-container .form-container form p {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 5px;
+  font-size: 18px;
+}
+.main-container .form-container form input,
+.main-container .form-container form select {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: 0px;
+}
+.main-container .form-container form textarea {
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+  max-height: 150px;
+  min-height: 150px;
+  min-width: 100%;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  border: 0px;
+}
+.main-container .form-container form .btn-center {
+  margin: 10px auto;
+  display: block;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  background: #DD6E42;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+}
+.main-container p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.promo {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: transparencia 0.9s ease;
+}
+@keyframes transparencia {
+  from {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.83);
+  }
+}
+.promo .promo-box {
+  max-width: 500px;
+  width: 75%;
+  animation: apromo 0.9s ease;
+}
+@keyframes apromo {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.promo .promo-box .promo-top {
+  color: white;
+  position: relative;
+  top: 0px;
+  left: 15px;
+  z-index: 30;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  transition: 1s;
+}
+.promo .promo-box .promo-top:hover {
+  cursor: pointer;
+  color: red;
+}
+.promo .promo-box a {
+  position: relative;
+  top: -15px;
+}
+.promo .promo-box a img {
+  width: 100%;
+}
+.promo .promo-box-out {
+  max-width: 500px;
+  width: 75%;
+  animation: dpromo 0.9s ease;
+  transform: scale(0.1);
+}
+@keyframes dpromo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
+  }
+}
+.promo .promo-box-out .promo-top {
+  color: white;
+  position: relative;
+  top: 0px;
+  left: 15px;
+  z-index: 30;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+}
+.promo .promo-box-out a {
+  position: relative;
+  top: -15px;
+}
+.promo .promo-box-out a img {
+  width: 100%;
+}
+
+.promo-out {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: dtransparencia 0.9s ease;
+  background: rgba(0, 0, 0, 0.1);
+}
+@keyframes dtransparencia {
+  from {
+    background: rgba(0, 0, 0, 0.83);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
