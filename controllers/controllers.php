@@ -55,7 +55,7 @@ class Mailer {
         $mail->SMTPSecure = 'tls';
             
         //Aqui viene la magia
-        $mail->Host = "Enter your sever mail.domain.extension";
+        $mail->Host = "Enter your server mail.domain.extension";
         $mail->Username = "Enter your email";
         $mail->Password = "Enter your password";
         $mail->AddAddress($DestinoEmail, $DestinoName);
